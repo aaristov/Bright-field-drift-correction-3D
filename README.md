@@ -2,7 +2,9 @@
 
 Use bright field signal to trace the drift in 3D with nanometer precision.
 
-You can try it with joy using our new platform Imjoy!
+This is a set of Python tools with command-line interface.
+
+You can also try in in the browser using our new platform Imjoy!
 
 Just install the [Imjoy plugin engine](https://github.com/oeway/ImJoy-Python/releases) and
 [Click this link](https://imjoy.io/#/app?w=drift&plugin=https://raw.githubusercontent.com/imodpasteur/Brightfield-Drift-Correction-3D/master/BFDC-Imjoy.html) to jump to the installation step of the script. Otherwise, click Add Plugin in Imjoy and paste [This link](https://raw.githubusercontent.com/imodpasteur/Brightfield-Drift-Correction-3D/master/BFDC-Imjoy.html) to the plugin installation URL line. Plugin will be installed autimatically with all necessary dependencies.
@@ -31,7 +33,7 @@ In order to trace the drift in 3D a calibration stack needed (dict.tif).
 
 Acquire bright field images with the same exposure (movie.tif) in order to trace the drift with nanometer precision.
 
-You'll need to select a contrast region say 32x32 picels from the dict.tif and save as crop.roi (ImageJ ROI format)
+You'll need to select a contrast region say 32x32 pixels from the dict.tif and save as crop.roi (ImageJ ROI format)
 
 ### Tracing drift:
 `python -m bfdc trace dict.tif crop.roi movie.tif`
